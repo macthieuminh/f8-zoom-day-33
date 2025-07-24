@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modal Web Components</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <button id="openModal">Open Modal</button>
+
+        <app-modal id="modal" hidden>
+            <h1 id="heading" heading="Modal 1"></h1>
+            <span slot="title">Salut! 👋</span>
+            <div slot="content">
+                This is a modal built with Web Components, from F8 with ❤️<br /><br />
+                You can close it with by pressing <b>Space</b>.<br /><br />
+                You can close it with the <b>X</b> button or by pressing <b>ESC</b>.👌
+            </div>
+        </app-modal>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
